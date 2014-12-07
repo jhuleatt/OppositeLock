@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+<TextView
+    android:id="@+id/firstLabel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/label_signalName"
+    android:textSize="20sp" />
+
+<TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="fill_parent" android:gravity="center" android:id="@+id/textView_signal" android:text="-" android:layout_height="wrap_content" android:textSize="50sp"></TextView>
+
+<TextView
+    android:id="@+id/secondLabel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/label_signal2Name"
+    android:textSize="20sp" />
+<TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="fill_parent" android:gravity="center" android:id="@+id/textView_signal2" android:text="-" android:layout_height="wrap_content" android:textSize="50sp"></TextView>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="200dp">
+        <Button android:layout_height="wrap_content" android:id="@+id/button_drift" android:text="DRIFT" android:layout_width="wrap_content" android:layout_gravity="left"></Button>
+        <Button android:layout_height="wrap_content" android:id="@+id/button_safety" android:text="Efficiency" android:layout_width="wrap_content" android:layout_gravity="right" android:layout_alignParentRight="true"></Button>
+
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout2" android:orientation="vertical" android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:orientation="horizontal" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="left" android:layout_width="0dp" android:id="@+id/linearLayout3" android:layout_weight="1" android:layout_height="fill_parent">
+
+            <Button android:layout_height="wrap_content" android:id="@+id/button_connect" android:text="@string/button_connect" android:layout_width="wrap_content" android:layout_gravity="bottom"></Button>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="0dp" android:id="@+id/linearLayout4" android:layout_weight="1" android:layout_height="fill_parent">
+            <Button android:layout_height="wrap_content" android:id="@+id/button_select" android:text="@string/button_selectDevice" android:layout_width="wrap_content" android:layout_gravity="bottom"></Button>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_width="0dp" android:id="@+id/linearLayout5" android:layout_weight="1" android:layout_height="fill_parent">
+            <Button android:layout_height="wrap_content" android:id="@+id/button_disconnect" android:text="@string/button_disconnect" android:layout_width="wrap_content" android:layout_gravity="bottom"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
